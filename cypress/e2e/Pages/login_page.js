@@ -1,9 +1,9 @@
 export class LoginPage{
-    enterusername(){
-        cy.get(':nth-child(2) > .oxd-input-group > :nth-child(2) > .oxd-input').type("Admin")
+    enterusername(name){
+        cy.get(':nth-child(2) > .oxd-input-group > :nth-child(2) > .oxd-input').type(name)
     }
-    enterpassword(){
-        cy.get(':nth-child(3) > .oxd-input-group > :nth-child(2) > .oxd-input').type("admin123")
+    enterpassword(password){
+        cy.get(':nth-child(3) > .oxd-input-group > :nth-child(2) > .oxd-input').type(password)
     }
     loginbutton(){
         cy.get('.oxd-button').click()
