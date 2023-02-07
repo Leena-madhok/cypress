@@ -15,6 +15,10 @@ it("google search",()=>{
     // cy.contains('Google Search').click()
     // cy.get('.MUFPAc > :nth-child(3) > a').click()
 
+    // 6. to add a delay
+    cy.wait(2000)
+
     // 5. timeout is used to increase the response time or reaction time. by default it is of 4000(4 secs)
-    cy.get('.GOE98c', {timeout: 10000}).click()
+    // cy.get('.GOE98c', {timeout: 10000}).click()
+    cy.get('.eKjLze > .g > [lang="en"] > .tF2Cxc > .yuRUbf > a > .LC20lb').click()
 })
